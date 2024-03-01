@@ -5,10 +5,11 @@
 	"license": "MIT",
 	"scripts": {
 		"start": "yarn run build && electron .",
-		"build": "tsc"
+		"build": "tsc && tailwindcss -i src/styles/style.css -o dist/styles/output.css"
 	},
 	"devDependencies": {
-		"electron": "^29.1.0"
+		"electron": "^29.1.0",
+		"tailwindcss": "^3.4.1"
 	},
 	"dependencies": {
 		"@types/electron": "^1.6.10"
